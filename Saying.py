@@ -19,7 +19,7 @@ class MYGUI:
 
         self.label2 = tkinter.Label(self.main_window, text="The chastening for our well-being fell upon "
                                                            "Him, And by His scourging we are healed. "
-                                                           "- Isaiah 53:5")
+                                                           "- Isaiah 53:5 ")
 
         # Call the pack method and enter the loop
         self.label1.pack()
