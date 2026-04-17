@@ -1,5 +1,5 @@
 # Programmer: Javan Graber
-# Date: 4/15/26
+# Date: 4/17/26
 # Program #2: Information Button
 
 import tkinter
@@ -9,8 +9,10 @@ import tkinter.messagebox
 class MYGUI:
     # Create the Initializer
     def __init__(self):
-        # Create the main window, the information button, and the quit button
+        # Create the main window, the title, the information button, and the quit button
         self.main_window = tkinter.Tk()
+
+        self.main_window.title("Information")
 
         self.inf_button = tkinter.Button(self.main_window, text="Show Info", command=self.display_info,
                                          borderwidth=15, relief="raised")
@@ -26,7 +28,7 @@ class MYGUI:
 
     # Create the function that displays the information
     def display_info(self):
-        tkinter.messagebox.showinfo("Info", "Javan Graber, 58934 Random Avenue, Farmington,"
+        tkinter.messagebox.showinfo("Info Response", "Javan Graber, 58934 Random Avenue, Farmington,"
                                     " MN 55962")
 
 if __name__ == "__main__":
